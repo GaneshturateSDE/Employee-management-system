@@ -52,25 +52,54 @@ API Calls | Axios |
 ## 📁 Project Structure
 
 ems/
-│
 ├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── services/
-│ │ ├── api/
-│ │ └── utils/
-│ └── package.json
+│   ├── src/
+│   │   ├── api/
+│   │   │   └── api.js
+│   │   │
+│   │   ├── components/
+│   │   │   └── Layout.jsx
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Login.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Employees.jsx
+│   │   │   ├── Leave.jsx
+│   │   │   └── Attendance.jsx
+│   │   │
+│   │   ├── services/
+│   │   │   ├── authService.js
+│   │   │   ├── employeeService.js
+│   │   │   ├── leaveService.js
+│   │   │   └── attendanceService.js
+│   │   │
+│   │   ├── utils/
+│   │   │   └── auth.js
+│   │   │
+│   │   ├── App.js
+│   │   └── index.js
+│   │
+│   └── package.json
 │
 ├── backend/
-│ └── src/
-│ ├── controllers/
-│ ├── routes/
-│ ├── middleware/
-│ ├── config/
-│ └── server.js
-│
-└── README.md
+│   └── src/
+│       ├── config/
+│       │   ├── db.js
+│       │   └── jwt.js
+│       │
+│       ├── controllers/
+│       │   ├── authController.js
+│       │   ├── employeeController.js
+│       │   ├── leaveController.js
+│       │   └── attendanceController.js
+│       │
+│       ├── middleware/
+│       │   └── authMiddleware.js
+│       │
+│       ├── routes/
+│       │   ├── authRoutes.js
+│       │   ├── em
+
 
 ---
 
